@@ -31,6 +31,10 @@ cp -R design-skills/*/ your-project/.claude/skills/
 
 Claude Code picks up any folder under `.claude/skills/` that contains a `SKILL.md`. Invoke a skill with `/software-design`, `/refactor-proposal`, and so on, or let Claude load it when the description matches the task.
 
+### GitHub Copilot
+
+The same files work unchanged. Each skill is a folder with a `SKILL.md` whose frontmatter has only `name` and `description`, which is the shared Agent Skills format Copilot reads. In a project, Copilot loads skills from `.github/skills/` and also from `.claude/skills/`, so one copy serves both tools. For personal skills in the Copilot CLI, copy the folders into `~/.copilot/skills/`.
+
 ## License
 
 Apache License 2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
