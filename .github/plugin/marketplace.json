@@ -1,0 +1,18 @@
+{
+  "name": "design-skills",
+  "owner": { "name": "Nohemi Gonzalez Lopez" },
+  "metadata": {
+    "description": "Design Skills: reasoning about software design, from a function to service boundaries.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "design-skills",
+      "source": { "source": "github", "repo": "nohemi20231/design-skills" },
+      "description": "Five skills: software-design, refactor-proposal, clean-code, tdd, software-architecture.",
+      "version": "1.0.0",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/nohemi20231/design-skills"
+    }
+  ]
+}
