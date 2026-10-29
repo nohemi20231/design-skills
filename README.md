@@ -9,10 +9,11 @@ Skills for Claude Code and GitHub Copilot that cover reasoning about software de
 | `skills/clean-code/` | Writing, refactoring, or reviewing code at the function, class, and module level: naming, function design, SOLID, error handling, tests, code smells. |
 | `skills/tdd/` | Implementing a feature or fixing a bug test-first: red-green-refactor, choosing the next test, test doubles, testing levels. |
 | `skills/software-architecture/` | Designing or reviewing system structure: layering, module and service boundaries, microservices, data ownership, integration patterns, ADRs. |
+| `skills/architecture-diagram/` | Starting any design, feature, or refactoring work in a repo: read the living architecture diagram first, and update it whenever services, modules, data stores, or integrations change. Ships `scripts/build-viewer.py` to render it. |
 
 ## How they fit together
 
-`software-design` is the reasoning layer: it decides *whether* a design is good and *why*. `clean-code` gives the rules below the class level and `software-architecture` the rules above it. `refactor-proposal` turns a concrete new ask into a justified set of changes, leaning on `clean-code` for the smell catalog and on `tdd` to keep behavior pinned while structure changes. The skills reference each other by name, so install them together.
+`software-design` is the reasoning layer: it decides *whether* a design is good and *why*. `clean-code` gives the rules below the class level and `software-architecture` the rules above it. `refactor-proposal` turns a concrete new ask into a justified set of changes, leaning on `clean-code` for the smell catalog and on `tdd` to keep behavior pinned while structure changes. `architecture-diagram` keeps the repo's living diagram current so `software-architecture` reviews start from the real structure. The skills reference each other by name, so install them together.
 
 ## Install
 
@@ -29,7 +30,7 @@ Per project (shared with the team through git):
 cp -R design-skills/skills/* your-project/.claude/skills/
 ```
 
-Claude Code picks up any folder under `.claude/skills/` that contains a `SKILL.md`. Invoke a skill with `/software-design`, `/refactor-proposal`, and so on, or let Claude load it when the description matches the task.
+Claude Code picks up any folder under `.claude/skills/` that contains a `SKILL.md`. Invoke a skill with `/software-design`, `/refactor-proposal`, `/architecture-diagram`, and so on, or let Claude load it when the description matches the task.
 
 ### GitHub Copilot
 

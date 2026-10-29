@@ -1,11 +1,11 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "design-skills",
-  "version": "1.0.0",
-  "description": "Skills for reasoning about software design: design judgment, refactor proposals, clean code, TDD, and architecture.",
+  "version": "1.1.0",
+  "description": "Skills for reasoning about software design: design judgment, refactor proposals, clean code, TDD, architecture, and a living architecture diagram.",
   "author": { "name": "Nohemi Gonzalez Lopez", "url": "https://github.com/nohemi20231" },
   "homepage": "https://github.com/nohemi20231/design-skills",
   "repository": "https://github.com/nohemi20231/design-skills",
   "license": "Apache-2.0",
-  "keywords": ["design", "refactoring", "clean-code", "tdd", "architecture"]
+  "keywords": ["design", "refactoring", "clean-code", "tdd", "architecture", "diagram"]
 }
