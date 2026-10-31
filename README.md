@@ -43,7 +43,7 @@ copilot plugin marketplace add nohemi20231/design-skills
 copilot plugin install design-skills@design-skills
 ```
 
-To update, run the install command again. The repo is a plugin in the Agent Plugins 1.0 format: `plugin.json` at the root and the skills under `skills/`.
+To update, run the install command again. See [`CHANGELOG.md`](CHANGELOG.md) for what changed in each version. The repo is a plugin in the Agent Plugins 1.0 format: `plugin.json` at the root and the skills under `skills/`.
 
 Or copy the folders by hand. In a project, Copilot loads skills from `.github/skills/` and also from `.claude/skills/`, so one copy serves both tools. For personal skills, copy the folders into `~/.copilot/skills/`.
 
