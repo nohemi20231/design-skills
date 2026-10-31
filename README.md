@@ -17,6 +17,15 @@ Skills for Claude Code and GitHub Copilot that cover reasoning about software de
 
 ## Install
 
+With the [`skills`](https://github.com/vercel-labs/skills) CLI (Node.js 22.20+). It asks which skills and agents to install; pick all six, since they reference each other:
+
+```sh
+npx skills add nohemi20231/design-skills      # this project
+npx skills add nohemi20231/design-skills -g   # every project
+```
+
+Or by hand.
+
 Personal (available in every project):
 
 ```sh
