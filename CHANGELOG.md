@@ -2,6 +2,9 @@
 
 Versions match `plugin.json` and `.github/plugin/marketplace.json`.
 
+## 1.1.1 - MIT license (2026-11-01)
+- License changed from Apache-2.0 to MIT. `NOTICE` is removed; `plugin.json` and `marketplace.json` say `MIT`. No skill changed.
+
 ## 1.1.0 - Architecture diagram (2026-10-28)
 - New `architecture-diagram` skill: read the repo's living architecture diagram before design, feature or refactoring work, and update it whenever services, modules, data stores or integrations change.
 - Ships `scripts/build-viewer.py`, which builds one HTML page showing every Mermaid diagram in the architecture docs, with pan and zoom, the source text and an SVG download.
