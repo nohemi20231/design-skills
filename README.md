@@ -58,4 +58,4 @@ Or copy the folders by hand. In a project, Copilot loads skills from `.github/sk
 
 ## License
 
-Apache License 2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
+[MIT](LICENSE).
