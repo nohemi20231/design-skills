@@ -2,6 +2,11 @@
 
 Versions match `plugin.json` and `.github/plugin/marketplace.json`.
 
+## 1.2.0 - Clock rules for tests (2026-11-22)
+- `clean-code`: a test may not use the wall clock. Repeatable means a fixed, injected clock; `LocalDate.now()` and `Thread.sleep` in a test are findings.
+- `clean-code`: the parameter-object rule has an example. The same four constructor parameters in several classes are one record with the derived values on it.
+- `tdd`: how to control time in a Spring scenario test: a `@Primary` fixed clock bean the test advances between steps, and awaiting the row or reply that proves something happened in place of a sleep.
+
 ## 1.1.0 - Architecture diagram (2026-10-28)
 - New `architecture-diagram` skill: read the repo's living architecture diagram before design, feature or refactoring work, and update it whenever services, modules, data stores or integrations change.
 - Ships `scripts/build-viewer.py`, which builds one HTML page showing every Mermaid diagram in the architecture docs, with pan and zoom, the source text and an SVG download.

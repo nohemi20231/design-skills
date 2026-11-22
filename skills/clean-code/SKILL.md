@@ -23,7 +23,7 @@ Apply this skill whenever you produce or review code. System structure questions
 ## Functions
 - A function does one thing at one level of abstraction. Read top-down (stepdown rule).
 - Keep functions small. If you need a comment or blank line to separate sections, extract a function.
-- Use three parameters or fewer. Group related ones into a parameter object.
+- Use three parameters or fewer. Group related ones into a parameter object. The same four constructor parameters in several classes (clock, id source, zone, alerts) are one record with the derived values on it (`now()`, `nextId()`), not four fields copied per class.
 - Don't use boolean flag arguments. Split into two well-named methods.
 - Avoid hidden side effects. Apply command-query separation: a function either changes state or returns a value.
 - Prefer returning new values to mutating arguments.
@@ -72,6 +72,7 @@ Apply this skill whenever you produce or review code. System structure questions
 - Test behavior through the public API, not implementation details.
 - Hold test code to production standards.
 - Design for testability: inject dependencies and avoid static or global state.
+- Repeatable means no wall clock: a fixed, injected clock in tests; `LocalDate.now()` and `Thread.sleep` in a test are findings.
 
 ## Formatting
 - Follow the project's formatter and linter. Consistency beats personal preference.

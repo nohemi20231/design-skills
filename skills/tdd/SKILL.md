@@ -33,7 +33,7 @@ Work in small red-green-refactor cycles. The `clean-code` skill governs the refa
 - Test observable behavior through the public API, never private methods or internals.
 - Each test checks one behavior and is named for it (`shouldRejectOrder_whenStockIsInsufficient`).
 - Structure each test as Arrange-Act-Assert. Keep tests independent and deterministic.
-- Control time, randomness, and IDs by injecting them.
+- Control time, randomness, and IDs by injecting them. In a Spring scenario test that means a `@Primary` fixed clock bean the test advances between steps (`MutableClock`), never `LocalDate.now()` in the test or `Thread.sleep` to let something happen: await the row or reply that proves it happened, and when nothing asynchronous follows (a duplicate acked inside the request), wait for nothing.
 - A test that is hard to write is design feedback. Fix the design rather than forcing the test.
 
 ## Test doubles
